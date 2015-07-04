@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Catalog</title>
+  <link href="http://fonts.googleapis.com/css?family=Roboto:400,500,400italic,500italic,700,700italic&subset=latin,cyrillic-ext,cyrillic,latin-ext" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Header -->
+  <div class="main-header">
+    <div class="cotainer clearfix">
+
+      <!-- Логотип -->
+      <a href="#" class="logo"></a>
+      
+      <!-- Навигация -->
+      <nav class="main-navigation">
+          <ul>
+            <a href="#">Студия</a>
+            <a href="#">Клиенты</a>
+            <a href="#">Магазин</a>
+            <a href="#">Контакты</a>
+            <a href="#">Корзина</a>
+          </ul>
+      </nav>
+    </div>
+  </div>
+
+
+  <!-- Приветствие -->
+  <div class="welcome-block">
+    <div class="container">
+      <h1>Добро пожаловать в магазин готовых макетов</h1>
+    </div>
+  </div>
+
+
+  <!-- Основной блок -->
+  <div class="main-block conteiner clearfix">
+
+    <!-- Сайдбар -->
+    <aside class="sidebar">
+      <form action="#" method="post">
+        <h2 class="filter-title">Стоимость</h2>
+
+        <!-- Фильтр диапазона цен -->
+        <div class="range-filter">
+
+          <!-- Бегунок -->
+          <div class="range-controls">
+            <div class="scale">
+              <div class="bar" style="width:70%"></div>
+            </div>
+            <div class="toggle min-toggle"></div>
+            <div class="toggle max-toggle"></div>
+          </div>
+
+          <!-- Диапазон цен -->
+          <div class="price-controls">
+            от <input class="min-price" type="text" value="0">
+            до <input class="max-price" type="text" value="15 000"> 
+          </div>
+
+          <!-- Сетка -->
+          <h2 class="filter-title">Сетка:</h2>
+          <input type="radio" id="rb1" name="network" checked>
+          <label for="rb1">Адаптивная</label>
+          <input type="radio" id="rb2" name="network">
+          <label for="rb2">Фиксированная</label>
+          <input type="radio" id="rb3" name="network">
+          <label for="rb3">Резиновая</label>
+
+          <!-- Особенности -->
+          <h2 class="filter-title">Особенности:</h2>
+          <input type="checkbox" id="ch1" name="slider" checked>
+          <label for="ch1">Слайдер</label>
+          <input type="checkbox" id="ch2" name="advantages">
+          <label for="ch2">Блок преимуществ</label>
+          <input type="checkbox" id="ch3" name="news" checked>
+          <label for="ch3">Новости</label>
+          <input type="checkbox" id="ch4" name="gallery">
+          <label for="ch4">Галерея</label>
+          <input type="checkbox" id="ch5" name="recycle">
+          <label for="ch5">Корзина</label>
+          <!-- Кнопка показать -->
+          <button type="submit" name="button" class="btn btn-filter">Показать</button>
+        </div>
+      </form>
+    </aside>  
+
+    <!-- Основной каталог -->
+    <div class="main-catalog">
+
+      <!-- Строка сортировки -->
+      <div class="sorting clearfix">
+        <div class="sorting-title">Сортировать:</div>
+        <ul class="sorting-filter">
+          <li>
+            <a href="#">По цене</a>
+          </li>
+          <li>
+            <a href="#">По типу</a>
+          </li>
+          <li>
+            <a href="#">По функционалу</a>
+          </li>
+          <li class="symbol-point">
+            <a href="#" class="symbol-link active"><i>вверх</i></a>
+          </li>
+          <li class="symbol-point">
+            <a href="#" class="symbol-link"><i>вниз</i></a>
+          </li>
+        </ul>
+      </div> 
+      
+      <!-- Блок каталога -->
+      <div class="catalog-block">
+
+        <!-- catalog-item -->
+        <div class="catalog-block_item">
+          <!-- Серый блок над картинкой -->
+          <div class="over-picture">
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+          </div>
+          <div class="actions">
+            <h3>SUNSET</h3>
+            <p>Интернет-магазин с личным кабинетом</p>
+            <a href="#" class="btn btn-red">10 000 р.</a>
+          </div>          
+          <img src="img/pict-item-1.jpg" alt="pict-1" width="240" height="240" >          
+        </div>
+
+        <!-- catalog-item -->
+        <div class="catalog-block_item">
+          <!-- Серый блок над картинкой -->
+          <div class="over-picture">
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+          </div>
+          <div class="actions">
+            <h3>SUNSET</h3>
+            <p>Интернет-магазин с личным кабинетом</p>
+            <a href="#" class="btn btn-red">10 000 р.</a>
+          </div> 
+          <img src="img/pict-item-2.jpg" alt="pict-1" width="240" height="240" >          
+        </div>
+
+        <!-- catalog-item -->
+        <div class="catalog-block_item">
+          <!-- Серый блок над картинкой -->
+          <div class="over-picture">
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+          </div>
+          <div class="actions">
+            <h3>SUNSET</h3>
+            <p>Интернет-магазин с личным кабинетом</p>
+            <a href="#" class="btn btn-red">10 000 р.</a>
+          </div> 
+          <img src="img/pict-item-3.jpg" alt="pict-1" width="240" height="240" >          
+        </div>
+
+        <!-- catalog-item -->
+        <div class="catalog-block_item">
+          <!-- Серый блок над картинкой -->
+          <div class="over-picture">
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+          </div>
+          <div class="actions">
+            <h3>SUNSET</h3>
+            <p>Интернет-магазин с личным кабинетом</p>
+            <a href="#" class="btn btn-red">10 000 р.</a>
+          </div> 
+          <img src="img/pict-item-4.jpg" alt="pict-1" width="240" height="240" >          
+        </div>
+
+        <!-- catalog-item -->
+        <div class="catalog-block_item">
+          <!-- Серый блок над картинкой -->
+          <div class="over-picture">
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+          </div>
+          <div class="actions">
+            <h3>SUNSET</h3>
+            <p>Интернет-магазин с личным кабинетом</p>
+            <a href="#" class="btn btn-red">10 000 р.</a>
+          </div> 
+          <img src="img/pict-item-5.jpg" alt="pict-1" width="240" height="240" >          
+        </div>
+
+        <!-- catalog-item -->
+        <div class="catalog-block_item">
+          <!-- Серый блок над картинкой -->
+          <div class="over-picture">
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+          </div>
+          <div class="actions">
+            <h3>SUNSET</h3>
+            <p>Интернет-магазин с личным кабинетом</p>
+            <a href="#" class="btn btn-red">10 000 р.</a>
+          </div> 
+          <img src="img/pict-item-6.jpg" alt="pict-1" width="240" height="240" >          
+        </div>
+
+        <!-- Пагинация -->
+        <ul class="pagination">
+          <li>
+            <a href="#">1</a>
+          </li>
+          <li>
+            <a href="#">2</a>
+          </li>
+          <li>
+            <a href="#">3</a>
+          </li>
+          <li>
+            <a href="#">Следующая</a>
+          </li>
+        </ul>        
+      </div>
+    </div>    
+  </div>
+
+
+  <!-- Блок с картой -->
+  <div class="map-block">
+    <div class="container">
+
+      <!-- Блок с адресом -->
+      <div class="address-block">
+        <h3 class="company-title">NЁRDS DESIGN STUDIO</h3>
+        <div class="address">
+          191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
+        </div>
+        <div class="tel">тел. +7 (812) 275-75-75</div>
+        <a href="#" class="btn btn-red">Напишите нам</a>
+      </div>
+    </div>
+  </div>  
+
+  <!-- Footer -->
+  <footer class="main-footer container clearfix">
+
+    <!-- Социальные сети -->
+    <div class="social-block">
+      <a href="#" class="social-btn social-btn_vk"><i></i></a>
+      <a href="#" class="social-btn social-btn_fb"><i></i></a>
+      <a href="#" class="social-btn social-btn_inst"><i></i></a>
+    </div>
+
+    <!-- Блок со слоганом -->
+    <div class="slogan-block">
+      <p class="slogan">Давайте дружить, это выгодно!</p>
+      <p class="discount">Скидка 10% для друзей из соцальных сетей.</p>
+    </div>
+  </footer>
+</body>
+</html>
