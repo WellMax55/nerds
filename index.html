@@ -168,24 +168,22 @@
     </div>    
   </div>
 
+  <!-- Блок с адресом -->
+  <div class="container">
+    <div class="address-block">
+      <h2 class="address-block_title">NЁRDS DESIGN STUDIO</h2>
+      <div class="address-block_address">
+        191186, Санкт-Петербург, <br> ул. Б. Конюшенная, д. 19/8
+      </div>
+      <div class="address-block_tel">тел. +7 (812) 275-75-75</div>
+      <a href="#" class="btn btn-red">Напишите нам</a>
+    </div>
+  </div>
+    
+
 
   <!-- Блок с картой -->
-  <div class="map-block">
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5991032728616!2d30.3230833!3d59.9387942!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywg0KDQvtGB0YHQuNGPLCAxOTExODY!5e0!3m2!1sru!2sua!4v1436189091024" width="640" height="415" style="border:0" allowfullscreen></iframe>
-
-    <div class="container">
-
-      <!-- Блок с адресом -->
-      <div class="address-block">
-        <h2 class="address-block_title">NЁRDS DESIGN STUDIO</h2>
-        <div class="address-block_address">
-          191186, Санкт-Петербург, <br> ул. Б. Конюшенная, д. 19/8
-        </div>
-        <div class="address-block_tel">тел. +7 (812) 275-75-75</div>
-        <a href="#" class="btn btn-red">Напишите нам</a>
-      </div>
-    </div>
-  </div>  
+  <div class="map" id="map-canvas"></div>  
 
   <!-- Footer -->
   <footer class="main-footer">
@@ -205,5 +203,8 @@
       </div>
     </div>  
   </footer>
+
+  <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&amp;sensor=false"></script>
+  <script src="js/script.js"></script>
 </body>
 </html>
