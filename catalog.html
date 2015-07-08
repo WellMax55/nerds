@@ -7,31 +7,34 @@
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+<body class="catalog-page">
+
   <!-- Header -->
   <div class="main-header">
     <div class="container clearfix">
 
       <!-- Логотип -->
-      <a href="#" class="logo"></a>
+      <a href="index.html" class="logo">
+        <img src="img/logo.png" alt="logo" width="139" height="56">
+      </a>
       
       <!-- Навигация -->
       <nav class="main-navigation">
           <ul>
             <li>
-              <a href="#">Студия</a>
+              <a href="index.html">Студия</a>
             </li>
             <li>
               <a href="#">Клиенты</a>
             </li>
             <li>
-              <a href="#">Магазин</a>
+              <a href="#" class="active">Магазин</a>
             </li>
             <li>
               <a href="#">Контакты</a>
             </li>
             <li>
-              <a href="#">Корзина</a>
+              <a href="#"><i class="icon-basket"></i>Корзина</a>
             </li>
           </ul>
       </nav>
@@ -42,7 +45,7 @@
   <!-- Приветствие -->
   <div class="welcome-block">
     <div class="container">
-      <h1>Добро пожаловать в магазин готовых макетов</h1>
+      <h1 class="welcome-block_title">Добро пожаловать в магазин готовых макетов</h1>
     </div>
   </div>
 
@@ -61,7 +64,7 @@
           <!-- Бегунок -->
           <div class="range-controls">
             <div class="scale">
-              <div class="bar" style="width:70%"></div>
+              <div class="bar"></div>
             </div>
             <div class="toggle min-toggle"></div>
             <div class="toggle max-toggle"></div>
@@ -72,8 +75,10 @@
             от <input class="min-price" type="text" value="0">
             до <input class="max-price" type="text" value="15 000"> 
           </div>
+        </div>
 
-          <!-- Сетка -->
+        <!-- Сетка -->
+        <div class="network">
           <h2 class="filter-title">Сетка:</h2>
           <input type="radio" id="rb1" name="network" checked>
           <label for="rb1">Адаптивная</label>
@@ -81,8 +86,10 @@
           <label for="rb2">Фиксированная</label>
           <input type="radio" id="rb3" name="network">
           <label for="rb3">Резиновая</label>
+        </div>
 
-          <!-- Особенности -->
+        <!-- Особенности -->
+        <div class="features">
           <h2 class="filter-title">Особенности:</h2>
           <input type="checkbox" id="ch1" name="slider" checked>
           <label for="ch1">Слайдер</label>
@@ -94,9 +101,10 @@
           <label for="ch4">Галерея</label>
           <input type="checkbox" id="ch5" name="recycle">
           <label for="ch5">Корзина</label>
-          <!-- Кнопка показать -->
-          <button type="submit" name="button" class="btn btn-filter">Показать</button>
-        </div>
+        </div> 
+
+        <!-- Кнопка показать -->
+        <button type="submit" name="button" class="btn btn-filter">Показать</button>        
       </form>
     </aside>  
 
@@ -105,10 +113,10 @@
 
       <!-- Строка сортировки -->
       <div class="sorting clearfix">
-        <div class="sorting-title">Сортировать:</div>
-        <ul class="sorting-filter">
-          <li>
-            <a href="#">По цене</a>
+        <div class="sorting_title">Сортировать:</div>
+        <ul class="sorting_filter">
+          <li class="active">
+            <a href="#" class="active">По цене</a>
           </li>
           <li>
             <a href="#">По типу</a>
@@ -117,10 +125,10 @@
             <a href="#">По функционалу</a>
           </li>
           <li class="symbol-point">
-            <a href="#" class="symbol-link active"><i>вверх</i></a>
+            <a href="#" class="symbol-link active"><i class="icon-up-dir"></i></a>
           </li>
           <li class="symbol-point">
-            <a href="#" class="symbol-link"><i>вниз</i></a>
+            <a href="#" class="symbol-link"><i class="icon-down-dir"></i></a>
           </li>
         </ul>
       </div> 
@@ -137,8 +145,8 @@
             <div class="circle"></div>
           </div>
           <div class="actions">
-            <h3>SUNSET</h3>
-            <p>Интернет-магазин с личным кабинетом</p>
+            <h2 class="actions_title">SUNSET</h2>
+            <p>Интернет-магазин <br> с личным кабинетом</p>
             <a href="#" class="btn btn-red">10 000 р.</a>
           </div>          
           <img src="img/pict-item-1.jpg" alt="pict-1" width="240" height="240" >          
@@ -153,10 +161,10 @@
             <div class="circle"></div>
           </div>
           <div class="actions">
-            <h3>SUNSET</h3>
-            <p>Интернет-магазин с личным кабинетом</p>
+            <h2 class="actions_title">SUNSET</h2>
+            <p>Интернет-магазин <br> с личным кабинетом</p>
             <a href="#" class="btn btn-red">10 000 р.</a>
-          </div> 
+          </div>          
           <img src="img/pict-item-2.jpg" alt="pict-1" width="240" height="240" >          
         </div>
 
@@ -169,10 +177,10 @@
             <div class="circle"></div>
           </div>
           <div class="actions">
-            <h3>SUNSET</h3>
-            <p>Интернет-магазин с личным кабинетом</p>
+            <h2 class="actions_title">SUNSET</h2>
+            <p>Интернет-магазин <br> с личным кабинетом</p>
             <a href="#" class="btn btn-red">10 000 р.</a>
-          </div> 
+          </div>          
           <img src="img/pict-item-3.jpg" alt="pict-1" width="240" height="240" >          
         </div>
 
@@ -185,10 +193,10 @@
             <div class="circle"></div>
           </div>
           <div class="actions">
-            <h3>SUNSET</h3>
-            <p>Интернет-магазин с личным кабинетом</p>
+            <h2 class="actions_title">SUNSET</h2>
+            <p>Интернет-магазин <br> с личным кабинетом</p>
             <a href="#" class="btn btn-red">10 000 р.</a>
-          </div> 
+          </div>          
           <img src="img/pict-item-4.jpg" alt="pict-1" width="240" height="240" >          
         </div>
 
@@ -201,10 +209,10 @@
             <div class="circle"></div>
           </div>
           <div class="actions">
-            <h3>SUNSET</h3>
-            <p>Интернет-магазин с личным кабинетом</p>
+            <h2 class="actions_title">SUNSET</h2>
+            <p>Интернет-магазин <br> с личным кабинетом</p>
             <a href="#" class="btn btn-red">10 000 р.</a>
-          </div> 
+          </div>          
           <img src="img/pict-item-5.jpg" alt="pict-1" width="240" height="240" >          
         </div>
 
@@ -217,16 +225,16 @@
             <div class="circle"></div>
           </div>
           <div class="actions">
-            <h3>SUNSET</h3>
-            <p>Интернет-магазин с личным кабинетом</p>
+            <h2 class="actions_title">SUNSET</h2>
+            <p>Интернет-магазин <br> с личным кабинетом</p>
             <a href="#" class="btn btn-red">10 000 р.</a>
-          </div> 
+          </div>          
           <img src="img/pict-item-6.jpg" alt="pict-1" width="240" height="240" >          
         </div>
 
         <!-- Пагинация -->
-        <ul class="pagination">
-          <li>
+        <ul class="catalog-block_pagination">
+          <li class="active">
             <a href="#">1</a>
           </li>
           <li>
@@ -243,18 +251,19 @@
     </div>    
   </div>
 
-
   <!-- Блок с картой -->
   <div class="map-block">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5991032728616!2d30.3230833!3d59.9387942!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywg0KDQvtGB0YHQuNGPLCAxOTExODY!5e0!3m2!1sru!2sua!4v1436189091024" width="640" height="415" style="border:0" allowfullscreen></iframe>
+
     <div class="container">
 
       <!-- Блок с адресом -->
       <div class="address-block">
-        <h3 class="company-title">NЁRDS DESIGN STUDIO</h3>
-        <div class="address">
-          191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
+        <h2 class="address-block_title">NЁRDS DESIGN STUDIO</h2>
+        <div class="address-block_address">
+          191186, Санкт-Петербург, <br> ул. Б. Конюшенная, д. 19/8
         </div>
-        <div class="tel">тел. +7 (812) 275-75-75</div>
+        <div class="address-block_tel">тел. +7 (812) 275-75-75</div>
         <a href="#" class="btn btn-red">Напишите нам</a>
       </div>
     </div>
@@ -262,20 +271,22 @@
 
 
   <!-- Footer -->
-  <footer class="main-footer container clearfix">
+  <footer class="main-footer">
+    <div class="container clearfix"> 
+     
+      <!-- Социальные сети -->
+      <div class="social-block">
+        <a href="#" class="social-btn social-btn_vk"><i class="icon-vk"></i></a>
+        <a href="#" class="social-btn social-btn_fb"><i class="icon-facebook"></i></a>
+        <a href="#" class="social-btn social-btn_inst"><i class="icon-instagramm"></i></a>
+      </div>
 
-    <!-- Социальные сети -->
-    <div class="social-block">
-      <a href="#" class="social-btn social-btn_vk"><i class=""></i></a>
-      <a href="#" class="social-btn social-btn_fb"><i class=""></i></a>
-      <a href="#" class="social-btn social-btn_inst"><i class=""></i></a>
-    </div>
-
-    <!-- Блок со слоганом -->
-    <div class="slogan-block">
-      <p class="slogan">Давайте дружить, это выгодно!</p>
-      <p class="discount">Скидка 10% для друзей из соцальных сетей.</p>
-    </div>
+      <!-- Блок со слоганом -->
+      <div class="slogan-block">
+        <p class="slogan-block_text">Давайте дружить, это выгодно!</p>
+        <p class="slogan-block_discount">Скидка 10% для друзей из соцальных сетей.</p>
+      </div>
+    </div>  
   </footer>
 </body>
 </html>
