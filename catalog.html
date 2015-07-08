@@ -259,7 +259,7 @@
         191186, Санкт-Петербург, <br> ул. Б. Конюшенная, д. 19/8
       </div>
       <div class="address-block_tel">тел. +7 (812) 275-75-75</div>
-      <a href="#" class="btn btn-red">Напишите нам</a>
+      <a href="#" class="btn btn-red write-us">Напишите нам</a>
     </div>
   </div>
 
@@ -286,7 +286,42 @@
     </div>  
   </footer>
 
+  <!-- Popup "Напишите нам"-->
+  <div class="modal-content">
+    <!-- Закрывающий крестик -->
+    <div class="modal-content_close"></div>
+    <form action="#" method="post">
+
+      <div class="modal-block-top clearfix">
+        <!-- Блок "Ваше имя" -->
+        <div class="modal-name">
+          <label for="block1">Ваше имя:</label>
+          <input type="text" id="block1" name="name" placeholder="Представьтесь пожалуйста">
+        </div>
+
+        <!-- Блок "Ваше e-mail" -->
+        <div class="modal-mail">
+          <label for="block2">Ваш e-mail:</label>
+          <input type="text" id="block2" name="mail" placeholder="Для отправки ответа">
+        </div>
+      </div>
+
+      <!-- Блок "Текст письма" -->
+      <div class="modal-letter">
+        <label for="block3">Текст письма:</label>
+        <textarea id="block3" name="letter" placeholder="В свободной форме"></textarea>
+      </div>
+
+      <button type="submit" class="btn btn-red">Отправить</button>
+      <button type="reset" name="reset" class="btn btn-cancel">Отмена</button>
+    </form>
+  </div>
+
+  
+
+  <!-- Скрипт для интерактивной карты -->
   <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&amp;sensor=false"></script>
+
   <script src="js/script.js"></script>
 </body>
 </html>
